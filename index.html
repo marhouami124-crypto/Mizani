@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ar" dir="rtl"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0B4640"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="ميزاني">
 <title>ميزاني – المربّي</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Great+Vibes&display=swap">
 <style>
@@ -145,6 +146,7 @@ var IC={home:'<svg viewBox="0 0 24 24"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"/
 function draw(){var v={home:home,budget:budget,travel:travel,tools:tools,rep:rep,data:data}[tab]();document.getElementById("app").innerHTML=v;
 document.getElementById("nav").innerHTML=[["home","الرئيسية"],["budget","الميزانية"],["travel","السفر والهدف"],["tools","أدوات"],["rep","تقرير"],["data","البيانات"]].map(function(x){return'<button class="'+(tab===x[0]?"on":"")+'" onclick="tab=\''+x[0]+'\';draw()">'+IC[x[0]]+'<span>'+x[1]+'</span></button>'}).join("")}
 applyTheme();
+if("serviceWorker" in navigator&&location.protocol.indexOf("http")===0)navigator.serviceWorker.register("sw.js").catch(function(){});
 function rollover(){if(S.roll===0||!S.tx.length)return;S.rolled=S.rolled||{};var m=S.tx.map(function(t){return mk(t.date)}).sort()[0],tot=0;
 while(m<MK){if(!S.rolled[m]){var o=0,i=S.salary,mm=m;S.tx.forEach(function(t){if(mk(t.date)!==mm)return;if(t.type==="in")i+=t.amt;else o+=t.amt});var l=i-o;S.rolled[m]=1;if(l>0){var ld=new Date(+m.slice(0,4),+m.slice(5),0).getDate();S.tx.push({id:Date.now()+Math.round(tot),date:m+"-"+(ld<10?"0"+ld:ld),type:"out",cat:"ادخار",amt:l,note:"ترحيل الباقي"});tot+=l}}
 var y=+m.slice(0,4),n=+m.slice(5)+1;if(n>12){n=1;y++}m=y+"-"+(n<10?"0"+n:n)}
