@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ميزاني – المربّي</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Great+Vibes&display=swap">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#EDF1EE;--sf:#FAFCFA;--ink:#12201B;--ink2:#58665F;--line:#D5DDD8;--ac:#0E5E55;--acink:#fff;--hero:#0B4640;--hero2:#0F5A51;--heroink:#F0F7F4;--good:#1B7433;--warn:#8F5B00;--bad:#BC322B;--sun:#F2B53A;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B110F;--sf:#121A17;--ink:#E6EDE9;--ink2:#9FADA7;--line:#23302B;--ac:#3BB5A2;--acink:#04201B;--hero:#0E3732;--hero2:#134640;--good:#5BC274;--warn:#E3A73A;--bad:#F06C62;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0B110F;--sf:#121A17;--ink:#E6EDE9;--ink2:#9FADA7;--line:#23302B;--ac:#3BB5A2;--acink:#04201B;--hero:#0E3732;--hero2:#134640;--good:#5BC274;--warn:#E3A73A;--bad:#F06C62;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 "IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;font-variant-numeric:tabular-nums;padding-bottom:92px;-webkit-tap-highlight-color:transparent}
+main{max-width:560px;margin:auto;padding:12px 16px 16px}
+.hero{background:linear-gradient(160deg,var(--hero2),var(--hero));color:var(--heroink);border-radius:28px 28px 28px 8px;padding:22px 22px 18px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset-inline-start:-60px;top:-60px;width:180px;height:180px;border-radius:50%;border:26px solid rgba(242,181,58,.13)}
+.hero small{opacity:.78;font-size:13px}
+.big{font-size:44px;line-height:1.2;font-weight:700;letter-spacing:-.5px;margin:2px 0 10px}
+.bar{height:10px;background:rgba(128,128,128,.2);border-radius:9px;overflow:hidden;margin:6px 0}
+.bar i{display:block;height:100%;background:var(--ac);border-radius:9px}
+.hero .bar{background:rgba(255,255,255,.16)}.hero .bar i{background:var(--sun)}
+.hero-foot{display:flex;justify-content:space-between;gap:12px;margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.18)}
+.hero-foot div{display:flex;flex-direction:column}.hero-foot b{font-size:16px}
+.card{background:var(--sf);border:1px solid var(--line);border-radius:20px;padding:16px;margin-top:12px}
+h2{font-size:15px;font-weight:700;margin:0 0 10px;padding-inline-start:10px;border-inline-start:3px solid var(--sun);line-height:1.3}
+.row{display:flex;gap:8px;align-items:center;justify-content:space-between}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+input,select,button,textarea{font:inherit;color:inherit}
+input,select{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--bg);min-height:46px}
+input:focus-visible,select:focus-visible,button:focus-visible,textarea:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+button{border:0;border-radius:999px;padding:10px 18px;background:var(--ac);color:var(--acink);font-weight:600;min-height:46px;cursor:pointer}
+button:active{transform:scale(.97)}
+button.g{background:transparent;color:var(--ink2);border:1px solid var(--line);padding:4px 12px;min-height:34px;font-size:13px;font-weight:500}
+.tx{padding:10px 0;border-bottom:1px solid var(--line)}.tx:last-child{border:0}
+.in{color:var(--good)}.out{color:var(--bad)}.mut{color:var(--ink2);font-size:13px}
+nav{position:fixed;bottom:0;inset-inline:0;background:color-mix(in srgb,var(--sf) 94%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);display:flex;padding:4px 6px calc(4px + env(safe-area-inset-bottom,0px));z-index:5}
+nav button{flex:1;background:none;color:var(--ink2);border-radius:14px;font-size:11px;font-weight:500;padding:6px 2px 4px;min-height:52px;display:flex;flex-direction:column;align-items:center;gap:2px}
+nav svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+nav button.on{color:var(--ac);background:color-mix(in srgb,var(--ac) 12%,transparent);font-weight:700}
+.tip{background:var(--bg);border-radius:14px;padding:12px;font-size:14px;margin-top:10px}
+.ov{color:var(--bad)}
+.nm{text-align:center;font:400 40px/1.3 "Great Vibes","Brush Script MT",cursive,serif;direction:ltr;margin:2px 0 12px;background:linear-gradient(90deg,var(--ac),var(--sun),var(--ac));-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.nm span{font:16px sans-serif;opacity:.8;-webkit-text-fill-color:var(--sun)}
+#lk{position:fixed;inset:0;z-index:20;background:radial-gradient(circle at 50% 30%,var(--hero2),var(--hero) 70%);color:var(--heroink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}
+#lk .nm{background:none;-webkit-text-fill-color:var(--sun);color:var(--sun)}
+#lk .mut{color:var(--heroink);opacity:.75}
+#lk input{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.3);color:var(--heroink);border-radius:16px}
+#lk .ov{color:#FFB4AC}
+textarea{border-radius:12px}
+</style></head><body><main id="app"></main>
+<nav id="nav"></nav>
+<div id="lk"><div class="nm" style="font-size:56px"><span>✦</span> Marhoul <span>✦</span></div><div class="mut">أدخل الرمز السري</div><input id="pn" type="password" inputmode="numeric" maxlength="4" autocomplete="off" oninput="chk()" aria-label="الرمز السري" style="text-align:center;letter-spacing:12px;max-width:200px;font-size:22px"><div id="pe" class="ov"></div></div>
+<script>
+var CATS=["سكن/كراء","أكل","سفر نحو الأهل","نقل محلي","اتصالات","أسرة","صحة","ترفيه","ادخار","أخرى"];
+var DEF={salary:54000,day:1,tx:[],lim:{"سكن/كراء":12000,"أكل":14000,"سفر نحو الأهل":5000,"نقل محلي":1500,"اتصالات":1500,"أسرة":4000,"صحة":1500,"ترفيه":2000,"ادخار":10000},
+debts:[],pay:25,cats:CATS.slice(),trip:{km:180,fare:1000,n:2},goal:{name:"سيارة",target:600000,saved:0}};
+var S;try{S=JSON.parse(localStorage.getItem("mz1")||"null")}catch(e){S=null}
+if(!S)S=JSON.parse(JSON.stringify(DEF));
+if(S.cats&&S.cats.length)CATS=S.cats;
+var tab="home";
+function save(){try{localStorage.setItem("mz1",JSON.stringify(S))}catch(e){}}
+function f(n){return Math.round(n).toLocaleString("ar-DZ-u-nu-latn")+" دج"}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function mk(d){return d.slice(0,7)}
+var now=new Date(),MK=now.toISOString().slice(0,7);
+function mtx(){return S.tx.filter(function(t){return mk(t.date)===MK})}
+function sums(){var o=0,i=0,c={};mtx().forEach(function(t){if(t.type==="in")i+=t.amt;else{o+=t.amt;c[t.cat]=(c[t.cat]||0)+t.amt}});return{o:o,i:i,c:c}}
+function daysLeft(){var end=new Date(now.getFullYear(),now.getMonth()+1,0).getDate();return Math.max(1,end-now.getDate()+1)}
+function home(){var s=sums(),inc=S.salary+s.i,rem=inc-s.o,pct=Math.min(100,s.o/inc*100),dl=daysLeft(),per=rem/dl;
+var h='<div class="nm"><span>✦</span> Marhoul <span>✦</span></div><div class="hero"><small>يمكنك صرف يومياً</small><div class="big">'+f(Math.max(0,per))+'</div><div class="bar"><i style="width:'+pct+'%"></i></div>'
++'<div class="row"><small>صُرف '+f(s.o)+' من '+f(inc)+'</small><small>باقي '+dl+' يوماً</small></div>'
++'<div class="hero-foot"><div><small>المتبقي هذا الشهر</small><b>'+f(rem)+'</b></div><div><small>الراتب القادم</small><b>بعد '+pd()+' يوماً</b></div></div></div>';
+if(S.rn)h+='<div class="card" style="border:2px solid var(--good)"><b class="in">✓ ادخار تلقائي:</b> رُحِّل '+f(S.rn)+' من باقي الشهر الماضي إلى الادخار. <button class="g" onclick="S.rn=0;save();draw()">إخفاء</button></div>';
+var al=S.alert||20000;if(rem<=al)h+='<div class="card" style="border:2px solid var(--bad)"><b class="ov">⚠ تنبيه:</b> المتبقي '+f(rem)+' وهو تحت '+f(al)+'. قلّل مصاريفك حتى الراتب.</div>';else if(rem<=al*1.25)h+='<div class="card" style="border:2px solid var(--sun)"><b>تقترب من '+f(al)+'</b> — بقي '+f(rem-al)+' فقط قبل الحد.</div>';
+h+='<div class="card"><h2>إضافة عملية</h2><div class="grid"><select id="ty"><option value="out">مصروف</option><option value="in">دخل إضافي</option></select>'
++'<input id="am" type="number" inputmode="numeric" placeholder="المبلغ (دج)"></div><div class="grid" style="margin-top:8px"><select id="ct">'
++CATS.map(function(c){return'<option>'+c+'</option>'}).join("")+'</select><input id="nt" placeholder="ملاحظة (اختياري)"></div>'
++'<button style="margin-top:8px;width:100%" onclick="add()">حفظ</button></div>';
+h+='<div class="card"><h2>آخر العمليات</h2>';
+var l=mtx().slice(-8).reverse();
+h+=l.length?l.map(function(t){return'<div class="tx row"><div>'+esc(t.cat)+'<div class="mut">'+t.date+(t.note?' · '+esc(t.note):'')+'</div></div><div><b class="'+t.type+'">'+(t.type==="in"?"+":"−")+f(t.amt)+'</b> <button class="g" onclick="del('+t.id+')">حذف</button></div></div>'}).join(""):'<div class="mut">لا توجد عمليات بعد.</div>';
+return h+'</div>'}
+function add(){var a=parseFloat(document.getElementById("am").value);if(!(a>0))return;
+S.tx.push({id:Date.now(),date:now.toISOString().slice(0,10),type:document.getElementById("ty").value,cat:document.getElementById("ct").value,amt:a,note:document.getElementById("nt").value});save();draw()}
+function del(id){S.tx=S.tx.filter(function(t){return t.id!==id});save();draw()}
+function budget(){var s=sums(),h='<div class="card"><h2>الراتب</h2><div class="grid"><div><div class="mut">الراتب الشهري</div><input type="number" inputmode="numeric" value="'+S.salary+'" onchange="S.salary=+this.value||0;save();draw()"></div></div></div>';
+var tl=0;
+CATS.forEach(function(c){var l=S.lim[c]||0,sp=s.c[c]||0;tl+=l;var p=l?Math.min(100,sp/l*100):0;
+h+='<div class="card"><div class="row"><b>'+c+'</b><span class="'+(l&&sp>l?"ov":"mut")+'">'+f(sp)+' / <input style="width:90px;min-height:32px;padding:4px" type="number" inputmode="numeric" value="'+l+'" onchange="S.lim[\''+c+'\']=+this.value||0;save();draw()"></span></div><div class="bar"><i style="width:'+p+'%;'+(l&&sp>l?"background:var(--bad)":"")+'"></i></div>'+(l&&sp>l?'<div class="ov mut">تجاوزت الحد بـ '+f(sp-l)+'</div>':'')+'</div>'});
+var free=S.salary-tl;
+return h+'<div class="tip">مجموع الحدود '+f(tl)+' — '+(free>=0?'يبقى هامش '+f(free)+' للطوارئ.':'<b class="ov">الحدود تفوق راتبك بـ '+f(-free)+'.</b>')+'</div>'}
+function travel(){var t=S.trip,m=t.fare*2*t.n,pc=m/S.salary*100,h='<div class="card"><h2>السفر نحو الأهل ('+t.km+' كلم)</h2><div class="grid">'
++'<div><div class="mut">المسافة (كلم)</div><input type="number" inputmode="numeric" value="'+t.km+'" onchange="S.trip.km=+this.value||0;save();draw()"></div>'
++'<div><div class="mut">ثمن التذكرة (ذهاب)</div><input type="number" inputmode="numeric" value="'+t.fare+'" onchange="S.trip.fare=+this.value||0;save();draw()"></div>'
++'<div><div class="mut">رحلات ذهاب وإياب/شهر</div><input type="number" inputmode="numeric" value="'+t.n+'" onchange="S.trip.n=+this.value||0;save();draw()"></div></div>'
++'<div class="tip">التكلفة الشهرية: <b>'+f(m)+'</b> ('+pc.toFixed(0)+'% من الراتب)</div></div>';
+h+='<div class="card"><h2>مقارنة عدد الرحلات</h2>';
+[1,2,3,4].forEach(function(n){var c=t.fare*2*n;h+='<div class="row tx"><span>'+n+' / شهر</span><span>'+f(c)+' · '+(c/S.salary*100).toFixed(0)+'%</span></div>'});
+h+='<div class="mut">فكّر في تجميع أيام الراحة لتسافر مرة كل أسبوعين بدل كل أسبوع.</div></div>';
+var g=S.goal,sv=S.tx.filter(function(x){return x.cat==="ادخار"&&x.type==="out"}).reduce(function(a,x){return a+x.amt},0)+g.saved,left=Math.max(0,g.target-sv),mo=S.lim["ادخار"]||0;
+h+='<div class="card"><h2>هدف الادخار: '+esc(g.name)+'</h2><div class="grid"><div><div class="mut">الاسم</div><input value="'+esc(g.name)+'" onchange="S.goal.name=this.value;save();draw()"></div>'
++'<div><div class="mut">المبلغ المستهدف</div><input type="number" inputmode="numeric" value="'+g.target+'" onchange="S.goal.target=+this.value||0;save();draw()"></div>'
++'<div><div class="mut">ادخار سابق</div><input type="number" inputmode="numeric" value="'+g.saved+'" onchange="S.goal.saved=+this.value||0;save();draw()"></div></div>'
++'<div class="bar" style="margin-top:10px"><i style="width:'+Math.min(100,sv/(g.target||1)*100)+'%"></i></div><div class="mut">ادّخرت '+f(sv)+' · يتبقى '+f(left)+'</div>'
++'<div class="tip">'+(mo>0?'بادخار '+f(mo)+' شهرياً تصل بعد حوالي <b>'+Math.ceil(left/mo)+'</b> شهراً (≈ '+(left/mo/12).toFixed(1)+' سنة).':'حدّد حد الادخار الشهري في تبويب الميزانية.')+'</div></div>';
+return h}
+function pd(){var t=new Date(now.getFullYear(),now.getMonth(),now.getDate()),d=new Date(now.getFullYear(),now.getMonth(),S.pay||25);if(d<t)d=new Date(now.getFullYear(),now.getMonth()+1,S.pay||25);return Math.round((d-t)/864e5)}
+function calcR(){var a=+document.getElementById("ca").value||0,c=document.getElementById("cc").value,s=sums(),nr=S.salary+s.i-s.o-a,l=S.lim[c]||0,sp=(s.c[c]||0)+a,m='يتبقى <b>'+f(nr)+'</b>، ويصبح اليومي <b>'+f(Math.max(0,nr/daysLeft()))+'</b>.';if(l&&sp>l)m+='<br><span class="ov">يتجاوز حد «'+c+'» بـ '+f(sp-l)+'.</span>';if(nr<0)m+='<br><span class="ov">لا يكفي رصيد الشهر.</span>';document.getElementById("co").innerHTML=a?m:"أدخل مبلغاً."}
+function addD(){var n=document.getElementById("dn").value.trim(),a=+document.getElementById("da").value;if(!n||!(a>0))return;S.debts.push({id:Date.now(),n:n,a:a,t:document.getElementById("dt").value,ok:0});save();draw()}
+function togD(id){S.debts.forEach(function(d){if(d.id===id)d.ok=d.ok?0:1});save();draw()}
+function delD(id){S.debts=S.debts.filter(function(d){return d.id!==id});save();draw()}
+function tools(){S.debts=S.debts||[];var s=sums(),inc=S.salary+s.i,rem=inc-s.o,dl=daysLeft();
+var h='<div class="card"><h2>حاسبة الباقي</h2><div class="mut">لو اشتريت شيئاً الآن، ماذا يتبقى لك؟</div><div class="grid" style="margin-top:8px"><input id="ca" type="number" inputmode="numeric" placeholder="ثمن الشراء" oninput="calcR()"><select id="cc" onchange="calcR()">'+CATS.map(function(c){return'<option>'+c+'</option>'}).join("")+'</select></div><div class="tip" id="co">أدخل مبلغاً.</div></div>';
+var wk=[0,0,0,0,0];mtx().forEach(function(t){if(t.type==="out")wk[Math.min(4,Math.floor((+t.date.slice(8)-1)/7))]+=t.amt});var mx=Math.max.apply(null,wk)||1;
+h+='<div class="card"><h2>المصاريف حسب الأسبوع</h2>'+wk.map(function(v,i){return'<div class="row tx"><span>أسبوع '+(i+1)+'</span><span style="flex:1;margin:0 10px"><div class="bar"><i style="width:'+v/mx*100+'%"></i></div></span><b>'+f(v)+'</b></div>'}).join("")+'<div class="tip">حصتك الأسبوعية المقترحة من الآن: <b>'+f(Math.max(0,rem)/(dl/7))+'</b></div></div>';
+var tc=Object.keys(s.c).sort(function(a,b){return s.c[b]-s.c[a]})[0],sv=s.c["ادخار"]||0;
+h+='<div class="card"><h2>ملخص الشهر</h2><div class="row tx"><span>نسبة الصرف من الدخل</span><b>'+(s.o/inc*100).toFixed(0)+'%</b></div><div class="row tx"><span>نسبة الادخار</span><b>'+(sv/inc*100).toFixed(0)+'%</b></div><div class="row tx"><span>أكبر فئة صرفاً</span><b>'+(tc?tc+' · '+f(s.c[tc]):'—')+'</b></div></div>';
+h+='<div class="card"><h2>ترحيل الباقي إلى الادخار</h2><div class="mut">ما يتبقى في نهاية كل شهر يُسجَّل تلقائياً ادخاراً عند فتح التطبيق في الشهر التالي.</div><div class="tip">المتوقع ترحيله هذا الشهر إن بقيت على وضعك: <b>'+f(Math.max(0,rem))+'</b></div><button class="g" style="margin-top:8px" onclick="S.roll=S.roll===0?1:0;save();draw()">'+(S.roll===0?'غير مفعّل — فعّل':'مفعّل ✓ — إيقاف')+'</button></div>';
+h+='<div class="card"><h2>تنبيه الرصيد</h2><div class="mut">يظهر تنبيه في الرئيسية عند اقتراب المتبقي من هذا المبلغ</div><input type="number" inputmode="numeric" value="'+(S.alert||20000)+'" onchange="S.alert=+this.value||20000;save();draw()"></div>';
+h+='<div class="card"><h2>يوم الراتب</h2><div class="grid"><div><div class="mut">يوم القبض من الشهر</div><input type="number" inputmode="numeric" min="1" max="31" value="'+(S.pay||25)+'" onchange="S.pay=Math.min(31,Math.max(1,+this.value||25));save();draw()"></div><div class="tip" style="margin:0">الراتب بعد <b>'+pd()+'</b> يوماً</div></div></div>';
+var mine=0,owe=0;S.debts.forEach(function(d){if(!d.ok){if(d.t==="my")mine+=d.a;else owe+=d.a}});
+h+='<div class="card"><h2>الديون</h2><div class="grid"><input id="dn" placeholder="الاسم"><input id="da" type="number" inputmode="numeric" placeholder="المبلغ"></div><div class="grid" style="margin-top:8px"><select id="dt"><option value="my">لي عنده</option><option value="owe">عليّ له</option></select><button onclick="addD()">إضافة</button></div>'
++'<div class="tip">لك عند الآخرين <b class="in">'+f(mine)+'</b> · عليك <b class="out">'+f(owe)+'</b></div>'
++S.debts.map(function(d){return'<div class="tx row" style="'+(d.ok?'opacity:.5':'')+'"><div>'+esc(d.n)+'<div class="mut">'+(d.t==="my"?"لي عنده":"عليّ له")+' · '+f(d.a)+(d.ok?' · سُدّد':'')+'</div></div><div><button class="g" onclick="togD('+d.id+')">'+(d.ok?'إلغاء':'سُدّد')+'</button> <button class="g" onclick="delD('+d.id+')">حذف</button></div></div>'}).join("")+'</div>';
+return h}
+function applyTheme(){var r=document.documentElement;if(S.theme==="dark"||S.theme==="light")r.setAttribute("data-theme",S.theme);else r.removeAttribute("data-theme")}
+function setTheme(t){S.theme=t;save();applyTheme();draw()}
+function addC(){var n=document.getElementById("cn").value.trim();if(n&&CATS.indexOf(n)<0){CATS.push(n);S.cats=CATS.slice();save();draw()}}
+function delC(i){if(CATS[i]==="ادخار")return;CATS.splice(i,1);S.cats=CATS.slice();save();draw()}
+var rm=MK;
+function rep(){var ms={};ms[MK]=1;S.tx.forEach(function(t){ms[mk(t.date)]=1});var ks=Object.keys(ms).sort().reverse();
+function tot(m){var o=0,i=S.salary,c={};S.tx.forEach(function(t){if(mk(t.date)!==m)return;if(t.type==="in")i+=t.amt;else{o+=t.amt;c[t.cat]=(c[t.cat]||0)+t.amt}});return{o:o,i:i,c:c}}
+if(!ms[rm])rm=MK;var r=tot(rm),net=r.i-r.o;
+var h='<div class="card"><div class="row"><h2>تقرير شهر</h2><select style="width:auto" onchange="rm=this.value;draw()">'+ks.map(function(k){return'<option'+(k===rm?' selected':'')+'>'+k+'</option>'}).join("")+'</select></div><div class="row tx"><span>الدخل</span><b class="in">'+f(r.i)+'</b></div><div class="row tx"><span>المصروف</span><b class="out">'+f(r.o)+'</b></div><div class="row tx"><span>الصافي</span><b class="'+(net<0?'out':'in')+'">'+f(net)+'</b></div></div>';
+var cs=Object.keys(r.c).sort(function(a,b){return r.c[b]-r.c[a]});
+h+='<div class="card"><h2>توزيع المصاريف</h2>'+(cs.length?cs.map(function(c){var p=r.c[c]/r.o*100;return'<div class="row"><span>'+esc(c)+'</span><span class="mut">'+f(r.c[c])+' · '+p.toFixed(0)+'%</span></div><div class="bar"><i style="width:'+p+'%"></i></div>'}).join(""):'<div class="mut">لا مصاريف في هذا الشهر.</div>')+'</div>';
+var m6=ks.slice(0,6).reverse(),d6=m6.map(function(m){return tot(m)}),mx=Math.max.apply(null,d6.map(function(x){return Math.max(x.i,x.o)}))||1,w=300/m6.length,sv='';
+d6.forEach(function(x,i){var x0=i*w+w/2-15,hi=x.i/mx*90,ho=x.o/mx*90;sv+='<rect x="'+x0+'" y="'+(100-hi)+'" width="13" height="'+hi+'" rx="2" fill="var(--ac)"/><rect x="'+(x0+15)+'" y="'+(100-ho)+'" width="13" height="'+ho+'" rx="2" fill="var(--sun)"/><text x="'+(x0+14)+'" y="115" font-size="9" text-anchor="middle" fill="var(--ink2)">'+m6[i].slice(5)+'</text>'});
+h+='<div class="card"><h2>آخر الأشهر</h2><svg viewBox="0 0 300 120" width="100%" role="img" aria-label="الدخل والمصروف حسب الشهر">'+sv+'</svg><div class="mut"><span style="color:var(--ac)">■</span> الدخل &nbsp; <span style="color:var(--sun)">■</span> المصروف</div></div>';
+return h}
+function data(){return'<div class="card"><h2>الرمز السري</h2><div class="grid"><input id="pc" type="password" inputmode="numeric" maxlength="4" placeholder="الرمز الحالي" autocomplete="off"><input id="pnw" type="password" inputmode="numeric" maxlength="4" placeholder="الرمز الجديد (4 أرقام)" autocomplete="off"></div><button style="margin-top:8px;width:100%" onclick="chgPin()">تغيير الرمز</button><button class="g" style="margin-top:8px;width:100%" onclick="S.unl=0;save();location.reload()">قفل التطبيق الآن</button><div id="pm" class="mut" role="status"></div></div><div class="card"><h2>المظهر</h2><div class="grid" style="grid-template-columns:1fr 1fr 1fr">'+[["auto","تلقائي"],["light","فاتح"],["dark","داكن"]].map(function(x){var on=(S.theme||"auto")===x[0];return'<button class="'+(on?'':'g')+'" onclick="setTheme(\''+x[0]+'\')">'+x[1]+'</button>'}).join("")+'</div></div><div class="card"><h2>الفئات</h2><div class="grid"><input id="cn" placeholder="اسم فئة جديدة"><button onclick="addC()">إضافة</button></div>'+CATS.map(function(c,i){return'<div class="tx row"><span>'+esc(c)+'</span>'+(c==="ادخار"?'<span class="mut">أساسية</span>':'<button class="g" onclick="delC('+i+')">حذف</button>')+'</div>'}).join("")+'<div class="mut">حذف فئة لا يمسح عملياتها القديمة.</div></div><div class="card"><h2>نسخة احتياطية</h2><div class="mut">بياناتك محفوظة على هذا الجهاز فقط.</div><div class="grid" style="margin-top:8px"><button onclick="exp()">نسخ البيانات</button><button class="g" onclick="imp()">استيراد</button></div><textarea id="bk" style="width:100%;margin-top:8px;min-height:70px;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:10px"></textarea>'
++'<button class="g" style="margin-top:8px" onclick="if(confirm(\'مسح كل البيانات؟\')){S=JSON.parse(JSON.stringify(DEF));CATS=DEF.cats.slice();save();applyTheme();draw()}">إعادة ضبط</button></div>'}
+function exp(){var e=document.getElementById("bk");e.value=JSON.stringify(S);e.select();try{document.execCommand("copy")}catch(x){}}
+function imp(){try{var o=JSON.parse(document.getElementById("bk").value);if(o&&o.tx){S=o;if(o.cats)CATS=o.cats;save();applyTheme();draw()}}catch(e){alert("نسخة غير صالحة")}}
+var IC={home:'<svg viewBox="0 0 24 24"><path d="M3 11 12 3l9 8v10h-6v-6H9v6H3z"/></svg>',budget:'<svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9h-9z"/><path d="M15 3.5A9 9 0 0 1 20.5 9H15z"/></svg>',travel:'<svg viewBox="0 0 24 24"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M8 19h7a3.5 3.5 0 0 0 0-7H9a3.5 3.5 0 0 1 0-7h7"/></svg>',tools:'<svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 12h.01M12 12h.01M15 12h.01M9 16h.01M12 16h.01M15 16h.01"/></svg>',rep:'<svg viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7"/></svg>',data:'<svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>'};
+function draw(){var v={home:home,budget:budget,travel:travel,tools:tools,rep:rep,data:data}[tab]();document.getElementById("app").innerHTML=v;
+document.getElementById("nav").innerHTML=[["home","الرئيسية"],["budget","الميزانية"],["travel","السفر والهدف"],["tools","أدوات"],["rep","تقرير"],["data","البيانات"]].map(function(x){return'<button class="'+(tab===x[0]?"on":"")+'" onclick="tab=\''+x[0]+'\';draw()">'+IC[x[0]]+'<span>'+x[1]+'</span></button>'}).join("")}
+applyTheme();
+function rollover(){if(S.roll===0||!S.tx.length)return;S.rolled=S.rolled||{};var m=S.tx.map(function(t){return mk(t.date)}).sort()[0],tot=0;
+while(m<MK){if(!S.rolled[m]){var o=0,i=S.salary,mm=m;S.tx.forEach(function(t){if(mk(t.date)!==mm)return;if(t.type==="in")i+=t.amt;else o+=t.amt});var l=i-o;S.rolled[m]=1;if(l>0){var ld=new Date(+m.slice(0,4),+m.slice(5),0).getDate();S.tx.push({id:Date.now()+Math.round(tot),date:m+"-"+(ld<10?"0"+ld:ld),type:"out",cat:"ادخار",amt:l,note:"ترحيل الباقي"});tot+=l}}
+var y=+m.slice(0,4),n=+m.slice(5)+1;if(n>12){n=1;y++}m=y+"-"+(n<10?"0"+n:n)}
+if(tot>0)S.rn=(S.rn||0)+tot;save()}
+function chgPin(){var c=document.getElementById("pc").value,n=document.getElementById("pnw").value,m=document.getElementById("pm");if(c!==(S.pin||"1997")){m.textContent="الرمز الحالي خاطئ";return}if(!/^[0-9]{4}$/.test(n)){m.textContent="الرمز الجديد يجب أن يكون 4 أرقام";return}S.pin=n;save();m.textContent="تم تغيير الرمز ✓";document.getElementById("pc").value="";document.getElementById("pnw").value=""}
+function chk(){var p=document.getElementById("pn"),e=document.getElementById("pe");if(p.value.length<4)return;if(p.value===(S.pin||"1997")){S.unl=Date.now();save();document.getElementById("lk").style.display="none";rollover();draw()}else{e.textContent="الرمز خاطئ";p.value=""}}
+if(S.unl&&Date.now()-S.unl<864e5){document.getElementById("lk").style.display="none";rollover();draw()}else setTimeout(function(){document.getElementById("pn").focus()},100);
+</script></body></html>
